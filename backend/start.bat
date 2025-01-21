@@ -4,5 +4,5 @@ timeout /T 2 /nobreak
 start cmd /k "python get_sample_data.py" // for sample data
 timeout /T 2 /nobreak
 
-start cmd /k "cd .. && cd frontend && timeout /T 1 /nobreak && npm start"
+start cmd /k "cd .. && cd frontend && timeout /T 1 /nobreak && npm install && npm start"
 timeout /T 1 /nobreak
