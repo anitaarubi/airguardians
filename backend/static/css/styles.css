@@ -1,0 +1,90 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0d1117;  /* Very dark background */
+    color: #c9d1d9;  /* Light gray text for readability */
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #161b22;  /* Darker gray container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #58a6ff;  /* Soft blue for headers */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #8b949e;  /* Subtle gray for description text */
+    margin-bottom: 20px;
+}
+
+/* Content and Cards */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #21262d;  /* Dark gray for card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #c9d1d9;  /* Light gray for card headers */
+    margin-bottom: 10px;
+}
+
+.data {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.value {
+    font-size: 3em;
+    color: #58a6ff;  /* Consistent soft blue for values */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.label {
+    font-size: 1.2em;
+    color: #8b949e;  /* Subtle gray for labels */
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #8b949e;  /* Same subtle gray for description text */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #484f58;  /* Dark gray for footer text */
+}

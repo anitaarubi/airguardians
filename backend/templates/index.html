@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality and Humidity Dashboard</title>
+    <link rel="stylesheet" href='{{url_for("static", filename = "css/styles.css")}}'>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Air Quality & Humidity Dashboard</h1>
+            <p>Real-time data visualization for air quality and humidity levels.</p>
+        </header>
+        
+        <div class="content">
+            <div class="card" id="air-quality-card">
+                <h2>Air Quality</h2>
+                <div class="data">
+                    <div class="value" id="air_quality_level">---</div>
+                    <div class="label">AQI</div>
+                </div>
+                <div class="description" id="air_quality_desc">Loading...</div>
+            </div>
+
+            <div class="card" id="humidity-card">
+                <h2>Humidity</h2>
+                <div class="data">
+                    <div class="value" id="air_humidity_level">---</div>
+                    <div class="label">%</div>
+                </div>
+                <div class="description" id="air_humidity_desc">Loading...</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Data provided by Flask backend API</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
