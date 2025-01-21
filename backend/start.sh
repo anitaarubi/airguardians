@@ -6,6 +6,7 @@ sudo apt install tmux
 
 # Start the Python application in a new tmux session
 tmux new-session -d -s app_session "python3 app.py"
+tmux attach -t app_session
 
 # Wait for 2 seconds
 sleep 2
@@ -18,6 +19,3 @@ sleep 2
 
 # Navigate to the frontend directory, install npm packages, and start the frontend server
 tmux new-session -d -s frontend_session "cd ../frontend && npm install && npm start"
-
-# Optional: Attach to the tmux session (e.g., app_session) if you want to interact with it
-tmux attach -t app_session
